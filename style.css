@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --black: #000;
+    --gray: #a9a9a9;
+    --white: #fafafa;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+
+/* --- Header --- */
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20%;
+    height: 150px;
+    margin: 5% 0 5% 0;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    Width: 439px;
+}
+
+h1{
+    font-family: 'PT Serif', serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+}
+
+#title{
+    text-transform: uppercase;
+}
+
+#text{
+    font-weight: 400;
+}
+
+
+/* --- Cards from the members --- */
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6.5vw;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+img{
+    height: 341px;
+    width: 238px;
+}
+
+figure{
+    display: flex;
+}
+
+.function{
+    writing-mode: vertical-rl;
+    font-family: 'PT Serif', serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 700;
+    
+}
+
+.down{
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    h1{
+        margin-bottom:30px;
+    }
+
+    #text{
+        display: flex;
+        margin: 3% 0 10% 0;
+        font-size: 14px;
+        width: 60vw;
+    }
+
+    main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    img{
+        height: 219px;
+        width: 139px;
+    }
+
+    figurecaption{
+        font-size: 10px;
+    }
+
+    div p{
+        font-size: 14px;
+    }
+
+    .down{
+        margin-top: 0;
+    }
+
+    .mobile{
+        margin-top: 70px;
+    }
+
+}
