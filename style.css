@@ -18,7 +18,7 @@ body{
     justify-content: center;
     align-items: center;
     height: auto;
-    width: auto;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -33,7 +33,7 @@ header{
     width: 100%;
     gap: 20%;
     height: 150px;
-    margin: 5% 0 5% 0;
+    padding: 5% 0 5% 0;
 }
 
 #container{
@@ -89,6 +89,9 @@ figure{
     text-transform: uppercase;
 }
 
+.down{
+    margin-top: 100px;
+}
 
 footer{
     display: flex;
@@ -102,19 +105,23 @@ footer{
     
 }
 
-.down{
-    margin-top: 100px;
-}
 
 @media (max-width: 768px) {
+    body{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        padding: 30px;
+    }
+
     header{
         flex-direction: column;
         height: auto;
         width: auto;
     }
 
-    h1{
-        margin-bottom:30px;
+    #container{
+        margin-top: 30px;
     }
 
     #text{
@@ -126,6 +133,7 @@ footer{
 
     main{
         grid-template-columns: repeat(2, 1fr);
+        gap: 2.5vw;
     }
 
     img{
